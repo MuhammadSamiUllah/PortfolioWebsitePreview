@@ -246,7 +246,29 @@
 
 
 <script src="./script.js"></script>
-  
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAkPfSIu2D2GQyda8uuCiC8VzGRC3Lmc1E",
+    authDomain: "portfoliopreview-4bd0e.firebaseapp.com",
+    projectId: "portfoliopreview-4bd0e",
+    storageBucket: "portfoliopreview-4bd0e.firebasestorage.app",
+    messagingSenderId: "536538576754",
+    appId: "1:536538576754:web:fa512b7333a79ef330cfeb",
+    measurementId: "G-0GJVDYK8NL"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({
